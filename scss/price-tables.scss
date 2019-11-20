@@ -114,10 +114,6 @@
 				box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 			}
 
-			p {
-				border-left: 0;
-			}
-
 			.column-header {
 				@media (min-width: 920px) {
 
@@ -136,9 +132,7 @@
 
 		}
 
-		li:nth-child(1) .column p {
-			border-left: 0;
-		}
+		// Colors
 
 		li:nth-child(1n) .column-header, li:nth-child(1n) .column-button {
 			background: linear-gradient(90deg, $purple, $dark-purple);
@@ -181,6 +175,9 @@
 				background: linear-gradient(90deg, $dark-red, darken($dark-red, 5%));
 			}
 		}
+		
+
+		// Flexbox hack for 5 list items when they stack 3 on 2
 
 		li:nth-child(4n), li:nth-child(5n) {
 			
