@@ -1,6 +1,14 @@
 {
-  "name": "grunt-starter",
+  "name": "AB_price_tables",
   "version": "1.0.0",
+  "description": "Price tables UI using Flexbox",
+  "author": {
+    "name": "Andy Beckmann",
+    "email": "contact@andybeckmann.com",
+    "url": "https://www.andybeckmann.com"
+  },
+  "repository": "github:andybeckmann/AB_price_tables",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "grunt": "*",
