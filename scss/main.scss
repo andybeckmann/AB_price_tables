@@ -1,13 +1,5 @@
-///////////////
-// main.scss //
-///////////////
+// Global styles
+@use 'global';
 
-* {
-	box-sizing: border-box;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-body {
-	padding: 20px 35px;
-	font-family: sans-serif;
-}
+// AB_price_tables
+@use 'components/AB_price_tables';

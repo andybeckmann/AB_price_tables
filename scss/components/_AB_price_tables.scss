@@ -1,0 +1,194 @@
+/**
+ * AB_price_tables
+ * version: 1.0.0
+ */
+
+@use 'AB_colors' as colors;
+
+.price-table-wrapper {
+
+	display: inline-block;
+	margin: 30px 0;
+
+	.price-table {
+
+		margin: 0;
+		padding: 0;
+
+		@media (min-width: 769px) {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			padding: 15px 20px;
+			margin: 0;
+
+		}
+
+		table {
+
+			width: 100%;
+			padding: 0;
+			border-collapse: collapse;
+
+			td {
+				background: #fefefe;
+				width: 100%;
+				padding: 15px 20px;
+				text-align: center;
+				font-weight: bold;
+
+				span {
+					//color: colors.$red;
+				}
+			}
+
+			tr:nth-child(odd) td {
+				background: #eee;
+
+			}
+		}
+			
+		li {
+			list-style-type: none;
+			width: 100%;
+
+			@media (min-width: 769px) {
+				width: 50%;
+			}
+
+			@media (min-width: 920px) {
+				width: 33%;
+			}
+
+			@media (min-width: 1200px) {
+				box-shadow: none;
+				margin: 0;
+				width: 20%;
+			}
+		}
+
+		.column { 
+			
+			background: #fff;
+			overflow: hidden;
+			margin: 0 0 15px 0;
+			box-shadow: 5px 0px 20px #999;
+
+			@media (min-width: 920px) {
+				margin: 0;
+			}
+
+			.column-header {
+				color: #fff;
+				display: block;
+				text-decoration: none;
+
+				h2 {
+					padding-top: 40px;
+					font-size: 84px;
+					text-align: center;
+					min-height: 175px;
+					margin: 0;
+				}
+			}
+
+			.column-button {
+				padding: 15px 20px;
+				color: #fff;
+				display: block;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: center;
+			}
+
+		}
+
+		.column.middle {
+
+			position: relative;
+			
+			@media (min-width: 920px) {
+				top: -30px;
+				box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+			}
+
+			.column-header {
+				@media (min-width: 920px) {
+
+					padding: 5px 0 45px 0;
+
+				}
+
+				h2 {
+
+					@media (min-width: 920px) {
+						font-size: 125px;
+					}
+
+				}
+			}
+
+		}
+
+		// Colors
+
+		li:nth-child(1n) .column-header, li:nth-child(1n) .column-button {
+			background: linear-gradient(90deg, colors.$purple, colors.$dark-purple);
+
+			&:hover {
+				background: colors.$dark-purple;
+			}
+		}
+
+		li:nth-child(2n) .column-header, li:nth-child(2n) .column-button {
+			background: linear-gradient(90deg, colors.$blue, colors.$dark-blue);
+
+			&:hover {
+				background: colors.$dark-blue;
+			}
+		}
+
+		li:nth-child(3n) .column-header, li:nth-child(3n) .column-button {
+			background: linear-gradient(90deg, colors.$green, colors.$dark-green);
+
+			&:hover {
+				background: colors.$dark-green;
+			}
+		}
+
+		li:nth-child(4n) .column-header, li:nth-child(4n) .column-button {
+
+			background: linear-gradient(90deg, colors.$orange, colors.$dark-orange);
+
+			&:hover {
+				background: colors.$dark-green;
+			}
+			
+		}
+
+		li:nth-child(5n) .column-header, li:nth-child(5n) .column-button {
+			background: linear-gradient(90deg, colors.$red, colors.$dark-red);
+
+			&:hover {
+				background: colors.$dark-red;
+			}
+		}
+		
+
+		// Flexbox hack for 5 list items when they stack 3 on 2
+
+		li:nth-child(4n), li:nth-child(5n) {
+			
+			@media (min-width: 769px) and (max-width: 1200px) {
+				width: 50%;
+			}
+
+		}
+
+	}
+}
