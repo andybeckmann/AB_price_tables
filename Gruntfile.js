@@ -10,10 +10,10 @@ module.exports = function(grunt) {
 
         // -- SASS Compilation
 
-        sass:{
-            dist:{
+        'dart-sass': {
+            target: {
                 files: {
-                    "css/main.css": "scss/import.scss"
+                    'css/main.css': 'scss/main.scss'
                 }
             }
         },
@@ -54,5 +54,5 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
  
-    grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['dart-sass', 'cssmin', 'watch']);
 };
