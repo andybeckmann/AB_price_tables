@@ -1,6 +1,6 @@
 /**
  * AB_price_tables
- * version: 1.0.0
+ * version: 2.0.0
  */
 
 .price-table-wrapper {
@@ -38,9 +38,10 @@
 				padding: 15px 20px;
 				text-align: center;
 				font-weight: bold;
+				border-collapse: collapse;
 
 				span {
-					//color: colors.$red;
+					color: #d9534f;
 				}
 			}
 
@@ -69,12 +70,19 @@
 			}
 		}
 
+		li:first-child {
+			.column { 
+				border-left: 1px solid #333;
+			}
+		}
+
 		.column { 
 			
 			background: #fff;
 			overflow: hidden;
 			margin: 0 0 15px 0;
-			box-shadow: 5px 0px 20px #999;
+			border-right: 1px solid #333;
+			display: block;
 
 			@media (min-width: 920px) {
 				margin: 0;
@@ -133,53 +141,29 @@
 
 		}
 
-		// Colors
-
 		li:nth-child(1n) .column-header, li:nth-child(1n) .column-button {
-			background: #333;
-
-			&:hover {
-				background: #444;
-			}
+			background: #222;
 		}
 
 		li:nth-child(2n) .column-header, li:nth-child(2n) .column-button {
-			background: #444;
-
-			&:hover {
-				background: #555;
-			}
+			background: #333;
 		}
 
 		li:nth-child(3n) .column-header, li:nth-child(3n) .column-button {
-			background: #555;
-
-			&:hover {
-				background: #666;
-			}
+			background: #444;
 		}
 
 		li:nth-child(4n) .column-header, li:nth-child(4n) .column-button {
-
-			background: #666;
-
-			&:hover {
-				background: #777;
-			}
+			background: #555;
 			
 		}
 
 		li:nth-child(5n) .column-header, li:nth-child(5n) .column-button {
-			background: #777;
-
-			&:hover {
-				background: #888;
-			}
+			background: #666;
 		}
 		
 
 		// Flexbox hack for 5 list items when they stack 3 on 2
-
 		li:nth-child(4n), li:nth-child(5n) {
 			
 			@media (min-width: 769px) and (max-width: 1200px) {

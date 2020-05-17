@@ -10,7 +10,7 @@ body {
 
 /**
  * AB_price_tables
- * version: 1.0.0
+ * version: 2.0.0
  */
 .price-table-wrapper {
   display: inline-block;
@@ -43,6 +43,10 @@ body {
   padding: 15px 20px;
   text-align: center;
   font-weight: bold;
+  border-collapse: collapse;
+}
+.price-table-wrapper .price-table table td span {
+  color: #d9534f;
 }
 .price-table-wrapper .price-table table tr:nth-child(odd) td {
   background: #eee;
@@ -68,11 +72,15 @@ body {
     width: 20%;
   }
 }
+.price-table-wrapper .price-table li:first-child .column {
+  border-left: 1px solid #333;
+}
 .price-table-wrapper .price-table .column {
   background: #fff;
   overflow: hidden;
   margin: 0 0 15px 0;
-  box-shadow: 5px 0px 20px #999;
+  border-right: 1px solid #333;
+  display: block;
 }
 @media (min-width: 920px) {
   .price-table-wrapper .price-table .column {
@@ -120,34 +128,19 @@ body {
   }
 }
 .price-table-wrapper .price-table li:nth-child(1n) .column-header, .price-table-wrapper .price-table li:nth-child(1n) .column-button {
-  background: #333;
-}
-.price-table-wrapper .price-table li:nth-child(1n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(1n) .column-button:hover {
-  background: #444;
+  background: #222;
 }
 .price-table-wrapper .price-table li:nth-child(2n) .column-header, .price-table-wrapper .price-table li:nth-child(2n) .column-button {
-  background: #444;
-}
-.price-table-wrapper .price-table li:nth-child(2n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(2n) .column-button:hover {
-  background: #555;
+  background: #333;
 }
 .price-table-wrapper .price-table li:nth-child(3n) .column-header, .price-table-wrapper .price-table li:nth-child(3n) .column-button {
-  background: #555;
-}
-.price-table-wrapper .price-table li:nth-child(3n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(3n) .column-button:hover {
-  background: #666;
+  background: #444;
 }
 .price-table-wrapper .price-table li:nth-child(4n) .column-header, .price-table-wrapper .price-table li:nth-child(4n) .column-button {
-  background: #666;
-}
-.price-table-wrapper .price-table li:nth-child(4n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(4n) .column-button:hover {
-  background: #777;
+  background: #555;
 }
 .price-table-wrapper .price-table li:nth-child(5n) .column-header, .price-table-wrapper .price-table li:nth-child(5n) .column-button {
-  background: #777;
-}
-.price-table-wrapper .price-table li:nth-child(5n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(5n) .column-button:hover {
-  background: #888;
+  background: #666;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .price-table-wrapper .price-table li:nth-child(4n), .price-table-wrapper .price-table li:nth-child(5n) {
