@@ -3,8 +3,6 @@
  * version: 1.0.0
  */
 
-@use 'AB_colors' as colors;
-
 .price-table-wrapper {
 
 	display: inline-block;
@@ -138,44 +136,44 @@
 		// Colors
 
 		li:nth-child(1n) .column-header, li:nth-child(1n) .column-button {
-			background: linear-gradient(90deg, colors.$purple, colors.$dark-purple);
+			background: #333;
 
 			&:hover {
-				background: colors.$dark-purple;
+				background: #444;
 			}
 		}
 
 		li:nth-child(2n) .column-header, li:nth-child(2n) .column-button {
-			background: linear-gradient(90deg, colors.$blue, colors.$dark-blue);
+			background: #444;
 
 			&:hover {
-				background: colors.$dark-blue;
+				background: #555;
 			}
 		}
 
 		li:nth-child(3n) .column-header, li:nth-child(3n) .column-button {
-			background: linear-gradient(90deg, colors.$green, colors.$dark-green);
+			background: #555;
 
 			&:hover {
-				background: colors.$dark-green;
+				background: #666;
 			}
 		}
 
 		li:nth-child(4n) .column-header, li:nth-child(4n) .column-button {
 
-			background: linear-gradient(90deg, colors.$orange, colors.$dark-orange);
+			background: #666;
 
 			&:hover {
-				background: colors.$dark-orange;
+				background: #777;
 			}
 			
 		}
 
 		li:nth-child(5n) .column-header, li:nth-child(5n) .column-button {
-			background: linear-gradient(90deg, colors.$red, colors.$dark-red);
+			background: #777;
 
 			&:hover {
-				background: colors.$dark-red;
+				background: #888;
 			}
 		}
 		

@@ -9,10 +9,6 @@ body {
 }
 
 /**
- * AB_colors
- * version: 1.0.0
- */
-/**
  * AB_price_tables
  * version: 1.0.0
  */
@@ -124,34 +120,34 @@ body {
   }
 }
 .price-table-wrapper .price-table li:nth-child(1n) .column-header, .price-table-wrapper .price-table li:nth-child(1n) .column-button {
-  background: linear-gradient(90deg, #b10dc9, #9c0bb1);
+  background: #333;
 }
 .price-table-wrapper .price-table li:nth-child(1n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(1n) .column-button:hover {
-  background: #9c0bb1;
+  background: #444;
 }
 .price-table-wrapper .price-table li:nth-child(2n) .column-header, .price-table-wrapper .price-table li:nth-child(2n) .column-button {
-  background: linear-gradient(90deg, #0074d9, #0066c0);
+  background: #444;
 }
 .price-table-wrapper .price-table li:nth-child(2n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(2n) .column-button:hover {
-  background: #0066c0;
+  background: #555;
 }
 .price-table-wrapper .price-table li:nth-child(3n) .column-header, .price-table-wrapper .price-table li:nth-child(3n) .column-button {
-  background: linear-gradient(90deg, #2ecc40, #29b739);
+  background: #555;
 }
 .price-table-wrapper .price-table li:nth-child(3n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(3n) .column-button:hover {
-  background: #29b739;
+  background: #666;
 }
 .price-table-wrapper .price-table li:nth-child(4n) .column-header, .price-table-wrapper .price-table li:nth-child(4n) .column-button {
-  background: linear-gradient(90deg, #ff851b, #ff7702);
+  background: #666;
 }
 .price-table-wrapper .price-table li:nth-child(4n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(4n) .column-button:hover {
-  background: #ff7702;
+  background: #777;
 }
 .price-table-wrapper .price-table li:nth-child(5n) .column-header, .price-table-wrapper .price-table li:nth-child(5n) .column-button {
-  background: linear-gradient(90deg, #d9534f, #d43f3a);
+  background: #777;
 }
 .price-table-wrapper .price-table li:nth-child(5n) .column-header:hover, .price-table-wrapper .price-table li:nth-child(5n) .column-button:hover {
-  background: #d43f3a;
+  background: #888;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .price-table-wrapper .price-table li:nth-child(4n), .price-table-wrapper .price-table li:nth-child(5n) {
