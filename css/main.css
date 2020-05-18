@@ -72,14 +72,13 @@ body {
     width: 20%;
   }
 }
-.price-table-wrapper .price-table li:first-child .column {
-  border-left: 1px solid #333;
+.price-table-wrapper .price-table li:first-child .column .column-details, .price-table-wrapper .price-table li:first-child .column .column-benefits {
+  border-left: 1px solid #ccc;
 }
 .price-table-wrapper .price-table .column {
   background: #fff;
   overflow: hidden;
   margin: 0 0 15px 0;
-  border-right: 1px solid #333;
   display: block;
 }
 @media (min-width: 920px) {
@@ -98,6 +97,12 @@ body {
   text-align: center;
   min-height: 175px;
   margin: 0;
+}
+.price-table-wrapper .price-table .column .column-details {
+  border-right: 1px solid #ccc;
+}
+.price-table-wrapper .price-table .column .column-benefits {
+  border-right: 1px solid #ccc;
 }
 .price-table-wrapper .price-table .column .column-button {
   padding: 15px 20px;
@@ -134,13 +139,13 @@ body {
   background: #333;
 }
 .price-table-wrapper .price-table li:nth-child(3n) .column-header, .price-table-wrapper .price-table li:nth-child(3n) .column-button {
-  background: #444;
+  background: #222;
 }
 .price-table-wrapper .price-table li:nth-child(4n) .column-header, .price-table-wrapper .price-table li:nth-child(4n) .column-button {
-  background: #555;
+  background: #333;
 }
 .price-table-wrapper .price-table li:nth-child(5n) .column-header, .price-table-wrapper .price-table li:nth-child(5n) .column-button {
-  background: #666;
+  background: #222;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .price-table-wrapper .price-table li:nth-child(4n), .price-table-wrapper .price-table li:nth-child(5n) {
