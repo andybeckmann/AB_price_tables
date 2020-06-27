@@ -5,7 +5,7 @@ AB_price_tables displays price tables neatly for large, medium, and small screen
 
 ## Screenshot
 
-![Screenshot](/screenshot-desktop.png?raw=true)
+![Screenshot](/screenshot.png?raw=true)
 
 ## Required files
 
