@@ -8,12 +8,6 @@ AB_price_tables displays price tables neatly for large, medium, and small screen
 ### Desktop
 ![Screenshot](/screenshot-desktop.png?raw=true)
 
-### Tablet
-![Screenshot](/screenshot-tablet.png?raw=true)
-
-### Small Tablet
-![Screenshot](/screenshot-sm-tablet.png?raw=true)
-
 ### Mobile
 ![Screenshot](/screenshot-mobile.png?raw=true)
 
