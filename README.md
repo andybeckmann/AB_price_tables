@@ -12,9 +12,6 @@ AB_price_tables displays price tables neatly for large, medium, and small screen
 ### Styles
 [AB_price_tables/scss/components/_AB_price_tables.scss](https://github.com/andybeckmann/AB_price_tables/blob/master/scss/components/_AB_price_tables.scss)
 
-### Scripts
-[AB_price_tables/js/AB_price_tables.js](https://github.com/andybeckmann/AB_price_tables/blob/master/js/AB_price_tables.js)
-
 ## Example
 
 ### HTML
